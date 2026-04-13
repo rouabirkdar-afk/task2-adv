@@ -1,0 +1,116 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(252, 223, 212);
+    font-family: 'Outfit';
+
+    .logo {
+        background-color: #FF8D4D;
+        padding: 20px;
+        border-right: 2px solid black;
+        border-radius: 20px 0 0 20px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .nav-main {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+
+        .nan-items {
+            padding: 30px;
+            border-left: 2px solid black;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(255, 124, 77);
+            }
+
+        }
+
+
+    }
+
+    .bars {
+        display: none;
+    }
+}
+
+li:last-child {
+    background-color: #FFAE80;
+    border-radius: 0 20px 20px 0;
+}
+
+.nav-menu {
+    width: 70vw;
+    z-index: 4;
+    padding: 40px 20px;
+    transform: translateX(100%);
+    transition: 1s all;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ffba92;
+    border: 2px solid rgb(24, 24, 24);
+    border-radius: 12px;
+    box-shadow: 5px 4px 15px black;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        padding: 40px 0;
+        gap: 15px;
+    }
+
+    .nav-main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style: none;
+        font-size: 24px;
+        }
+
+    }
+
+    .close-btn {
+        align-self: flex-end;
+        background: none;
+        border: none;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .showmune {
+        transform: translateX(0%);
+
+    }
+
+    @media screen and (max-width : 992px) {
+        nav {
+            .nan-items {
+                display: none;
+            }
+
+            .bars {
+                display: block;
+                font-size: 40px;
+                background: none;
+                border: none;
+                border-left: 2px solid black;
+                padding: 10px 30px;
+                background-color: #FFEFE5;
+                border-radius: 0 20px 20px 0;
+            }
+
+            .logo {
+                font-size: 12px;
+            }
+        }
+
+    }

@@ -1,0 +1,109 @@
+.card-style {
+    border-radius: 12px;
+    padding: 50px 30px;
+    background-color: #FFFFFF;
+    border: 2px solid #262626;
+    box-shadow: 10px 10px 0px #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    justify-content: flex-start;
+    
+    &:hover{
+    transform: translateY(-5%);
+    transition: 1.5s;
+    box-shadow: 20px 20px 30px #1E1E1E;
+    background-color: #FF8D4D;
+    cursor: pointer;
+}
+
+
+    .card-tit {
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 130%;
+        margin-bottom: 24px;
+        margin-top: 30px;
+    }
+
+    .card-des {
+        font-family: Outfit;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        width: 90%;
+        color: #4C4C4D;
+    }
+}
+.card-po{
+        position: relative;
+        width: calc(90% /3);
+
+}
+.icon-card{
+    background-color: #FFDECC;
+    padding: 12px;
+    gap: 10px;
+    width: 74px;
+    height: 74px;
+    font-size: 150px;
+    border-radius: 12px;
+    border: 2px solid #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    z-index: 2;
+}
+.slid-card {
+    width: 100%; 
+    display: flex;
+    align-items: stretch
+    
+}
+
+.slid-card .slid-style {
+    text-align: center; 
+    align-items: center;
+    
+}
+
+.slid-card .mask {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #FFF5F0;
+    border: 1px solid #333;
+    margin-bottom: 15px;
+}
+.normal-card{
+    margin-bottom: 30px;
+}
+.slid-card .stars {
+    width: 100px; 
+    margin-bottom: 15px;
+}
+@media screen  and (max-width : 992px){
+    .card-po{
+        width: 100%;
+    }
+    .icon-card{
+        width: 56px;
+    height: 56px;
+    }
+    .card-tit{
+        font-size: 22px;
+    }
+    .card-des{
+        font-size: 16px;
+        width: 100%;
+    }
+    .card-style{
+        padding: 30px 20px 20px 20px;
+        margin-bottom: 80px;
+    }
+    
+}

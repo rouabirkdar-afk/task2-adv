@@ -1,0 +1,62 @@
+.hero-main-sec{
+display: flex;
+justify-content: space-around;
+align-items: center;
+gap: 40px;
+margin: 0 50px;
+height: 100%;
+
+.wellcom-text{
+    border-bottom: 2px solid #262626;
+    padding-bottom: 6px;
+    gap: 10px;
+    font-size: 22px;
+    line-height: 150%;
+    font-family: 'Outfit';
+}
+.hero-title{
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 130%;
+    padding: 10px 0 20px 0;
+span{
+    color: #FF8D4D;
+}
+}
+.hero-discription{
+    font-family: Outfit;
+    font-size: 20px;
+    line-height: 150%;
+    color: #333333;
+    font-weight: 500;
+    margin-bottom: 60px;
+
+}
+
+}
+.hero-image{
+    width: 100%;
+    max-width: 45%;
+}
+@media screen  and (max-width : 992px){
+    .hero-main-sec{
+        display: block;
+        margin: 0 10px;
+        .hero-title{
+        font-size: 30px;
+    }
+    .wellcom-text{
+        font-size: 16px;
+    }
+    }
+    .hero-image{
+        max-width: 100%;
+        margin-bottom: 30px;
+        
+    }
+    .hero{
+        text-align: center;
+    }
+    
+}

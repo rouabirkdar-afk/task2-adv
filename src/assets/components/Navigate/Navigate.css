@@ -1,0 +1,120 @@
+.navi-main {
+    height: 100%;
+    margin: 0 50px;
+}
+
+.navi-style {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 70px;
+    gap: 40px;
+}
+
+.navi-card {
+    padding: 80px;
+    gap: 80px;
+    border-radius: 12px;
+    border: 2px solid #262626;
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 0px #1E1E1E;
+    text-align: center;
+    font-family: 'Raleway';
+    width: 45%;
+
+    h1 {
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 130%;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    p {
+        font-family: Outfit;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        padding: 40px 0;
+    }
+
+    button {
+        font-family: Outfit;
+        background-color: #FFDECC;
+        border-radius: 10px;
+        border: 2px solid #262626;
+        width: 100%;
+        padding: 18px 0;
+        margin: 10px 0;
+        font-size: 20px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 10px 10px 0px #1E1E1E;
+        &:hover{
+            background-color: #ff9742;
+            box-shadow: 10px 10px 40px orangered;
+            transition: 1s ease-in-out;
+            cursor: pointer;
+        }
+    }
+.circle{
+    width: 20px;
+    height: 15px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #FFDECC;
+    border: 1px solid #262626;
+}
+.line{
+    width: 100px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    text-shadow: -1px -2px  3px rgb(255, 81, 0);
+
+
+}
+.dash{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+.navi-card:hover{
+    background-color: #1E1E1E;
+    color: rgb(255, 117, 67);
+    border: 3px solid #ff9742;
+    box-shadow: 10px 10px 40px orangered;
+    transform: translateY(-5%);
+    transition: 1s ease-in-out;
+}
+@media screen  and (max-width : 992px){
+    .navi-style{
+        display: block;
+    }
+    .navi-card{
+        width: 100%;
+        padding: 40px;
+        margin: 30px 0;
+        h1{
+            font-size: 28px
+        }
+        p{
+            font-size: 16px;
+        }
+        button{
+            font-size: 16px;
+            padding: 16px;
+            box-shadow: 5px 5px 0px #1E1E1E;
+        }
+        .dash{
+        display: none;
+    }
+    }
+    
+    
+}

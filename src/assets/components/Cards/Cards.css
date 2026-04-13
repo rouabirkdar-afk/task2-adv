@@ -1,0 +1,21 @@
+.main-cards{
+    height: 100%;
+    margin: 0 50px;
+}
+.cards-cs{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap; 
+    gap: 30px;
+    margin-top: 80px;
+}
+@media screen  and (max-width : 992px){
+.cards-cs{
+    display: block;
+}
+.main-cards{
+    margin: 0 20px;
+
+}
+}

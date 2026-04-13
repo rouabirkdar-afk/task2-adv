@@ -1,0 +1,25 @@
+.baner-style{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-image: url("/assets/img/baner.png");
+    background-color: rgb(252, 223, 212);
+    height: 58px;
+    font-size: 20px;
+    gap: 8px;
+    font-family: 'Outfit';
+    span{
+        font-size: 30px;
+    }
+}
+@media screen  and (max-width : 992px){
+    .baner-style{
+        font-size: 14px;
+        span{
+            font-size: 16px;
+        }
+    }
+}
